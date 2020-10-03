@@ -1,0 +1,14 @@
+* {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("beer-background.jpg");
+    background-size: cover;
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scotch going here</title>
+</head>
+<body>
+
+<h1>All da scotches will be here soon</h1>
+
+
+<ul>
+    <li th:each="review: ${scotchOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+    </li>
+</ul>
+
+
+
+
+<p><a href="/reviews">Return to the Reviews List</a></p>
+</body>
+</html>

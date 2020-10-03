@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>This will have the full list of reviews</title>
+    <link th:href="@{/images/mainPagelayout.css}" rel="stylesheet">
+</head>
+<body>
+<main>
+
+    <ul class="bigLinksList">
+        <li>
+            <h1><a href="/scotchReviews">Scotch Reviews</a>
+            </h1>
+        </li>
+
+        <li>
+            <h1>
+                <a href="/beerReviews">Beer Reviews</a>
+            </h1>
+        </li>
+    </ul>
+
+    <!-- <p><a href="/beerReviews">Trying a beer link in a P tag</a></p> -->
+
+    <ul>
+        <li th:each="review: ${allReviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+        </li>
+    </ul>
+
+
+</main>
+
+
+<footer>
+    <small>&copy wcci- 2020</small>
+</footer>
+
+</body>
+</html>

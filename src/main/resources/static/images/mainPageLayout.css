@@ -1,0 +1,22 @@
+* {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url("main-background.jpg");
+    background-size: cover;
+
+}
+
+.bigLinksList{
+    font-size: 2em;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
