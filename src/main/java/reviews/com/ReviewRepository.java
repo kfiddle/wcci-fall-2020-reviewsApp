@@ -17,9 +17,9 @@ public class ReviewRepository {
     public ReviewRepository() throws MalformedURLException {
         Collection<Review> tempReviewsList = new ArrayList<>();
         tempReviewsList.add(new Review(1L, "Dortmunder is best", "/images/reviewer1.jpg", 1, "content1", 5, new GregorianCalendar(1975, 10, 10)));
-        tempReviewsList.add(new Review(2L, "Yuengling only works in PA", "/images/reviewer1.jpg", 1, "content2", 1, new GregorianCalendar(2012, 5, 3)));
-        tempReviewsList.add(new Review(3L, "Johnny Walker Blue is overhyped", "/images/reviewer1.jpg", 2, "content3", 3, new GregorianCalendar(2017, 2, 17)));
-        tempReviewsList.add(new Review(4L, "Springbank- underrated", "/images/reviewer1.jpg", 2, "content4", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(2L, "Yuengling only works in PA", "/images/reviewer2.png", 1, "content2", 1, new GregorianCalendar(2012, 5, 3)));
+        tempReviewsList.add(new Review(3L, "Johnny Walker Blue is overhyped", "/images/reviewer3.jpg", 2, "content3", 3, new GregorianCalendar(2017, 2, 17)));
+        tempReviewsList.add(new Review(4L, "Springbank- underrated", "/images/reviewer4.jpg", 2, "content4", 4, new GregorianCalendar(2019, 12, 22)));
 
         for (Review review : tempReviewsList) {
             reviews.put(review.getId(), review);
