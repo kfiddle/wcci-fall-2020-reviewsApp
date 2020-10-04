@@ -30,9 +30,8 @@ a {
 }
 
 .singleReviewBody {
-    max-width: 800px;
-    background-image: url("single-review-background.jpg");
-    background-size: auto;
+    background-image: url("single-review-background2.jpg");
+
 }
 
 .bigLinksList {
@@ -44,12 +43,28 @@ a {
     align-items: flex-end;
 }
 
-.singleReviewContainer h2 {
-    font-size: 2em;
-    color: red;
+.singleReviewImageFrame {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 3px solid #ccc;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 40px 25px;
+
 }
 
 .reviewerShot {
-    width: 600px;
+    width: 100%;
+    height: 100%;
+}
+
+.reviewContentContainer {
+    width: 500px;
+    height: 200px;
+    background-color: beige;
+    border: 5px solid #666;
+    margin-left: 60%;
+    margin-bottom: 50%;
 
 }

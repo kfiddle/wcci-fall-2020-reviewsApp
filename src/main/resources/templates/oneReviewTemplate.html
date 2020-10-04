@@ -4,25 +4,23 @@
     <meta charset="UTF-8">
     <title>This will have a specific review</title>
 
-    <link th:href="@{/images/mainLayout.css}" rel="stylesheet" >
-
-
+    <link th:href="@{/images/mainLayout.css}" rel="stylesheet">
 </head>
+
 <body class="singleReviewBody">
 
-<div class=" singleReviewContainer">
+    <div class="singleReviewImageFrame">
+        <img class="reviewerShot" th:src="${reviewModel.getImageUrl()}" alt="reviewer's photo">
+    </div>
 
-<h2 th:text="${reviewModel.getImageUrl()}"></h2>
-
-    <!--<h2 th:text="${reviewModel.getUrl}"></h2>-->
-
-    <img class= "reviewerShot" th:src="${reviewModel.getImageUrl()}" alt="reviewer's photo">
-  <!-- img th:src="@{/images/${reviewModel.getImageUrl()}}" alt="shot of our reviewer" -->
+    <div class="reviewContentContainer">
 
 
-<p><a href="/reviews">Return to the Reviews List</a></p>
+        <iframe src="/images/test-content.txt" frameborder="0"></iframe>
 
-</div>
+    </div>
+
+    <p><a href="/reviews">Return to the Reviews List</a></p>
 
 
 </body>
