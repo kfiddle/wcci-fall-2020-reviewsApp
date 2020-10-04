@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>This will have the full list of reviews</title>
-    <link th:href="@{/images/mainPagelayout.css}" rel="stylesheet">
+    <!--<link th:href="@{/images/mainPagelayout.css}" rel="stylesheet">-->
+    <link th:href="@{/images/mainLayout.css}" rel="stylesheet" >
+
 </head>
-<body>
+<body class="mainBody">
 <main>
 
     <ul class="bigLinksList">
@@ -23,10 +25,10 @@
 
     <!-- <p><a href="/beerReviews">Trying a beer link in a P tag</a></p> -->
 
-    <ul>
+   <!-- <ul>
         <li th:each="review: ${allReviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
         </li>
-    </ul>
+    </ul>-->
 
 
 </main>

@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>This will have a specific review</title>
-</head>
-<body>
-<h1>Let's put one single review at a time here</h1>
 
-<h2 th:text="${reviewModel.title}"></h2>
+    <link th:href="@{/images/mainLayout.css}" rel="stylesheet" >
+
+
+</head>
+<body class="singleReviewBody">
+
+<div class=" singleReviewContainer">
+
+<h2 th:text="${reviewModel.getImageUrl()}"></h2>
+
+    <!--<h2 th:text="${reviewModel.getUrl}"></h2>-->
+
+    <img src="/images/${reviewModel.getImageUrl()}" alt="">
+  <!-- img th:src="@{/images/${reviewModel.getImageUrl()}}" alt="shot of our reviewer" -->
 
 
 <p><a href="/reviews">Return to the Reviews List</a></p>
+
+</div>
+
+
 </body>
 </html>

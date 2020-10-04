@@ -1,5 +1,6 @@
 package reviews.com;
 
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
@@ -31,7 +32,7 @@ public class Review {
         return title;
     }
 
-    public String getUrl() {
+    public String getImageUrl() {
         return imageUrl;
     }
 
@@ -50,7 +51,5 @@ public class Review {
     public Review(){
         date = new GregorianCalendar(2018, 6, 27);
     }
-
-
 
 }

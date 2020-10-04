@@ -1,0 +1,54 @@
+* {
+    font-family: sans-serif;
+    line-height: 1.6em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.mainBody {
+    background-image: url("main-background-medium.jpg");
+    background-size: cover;
+
+}
+
+.beerBody {
+
+    background-image: url("beer-background.jpg");
+    background-size: cover;
+}
+
+.scotchBody {
+    background-image: url("scotch-background.jpg");
+    background-size: cover;
+
+}
+
+.singleReviewBody {
+    max-width: 800px;
+    background-image: url("single-review-background.jpg");
+    background-size: auto;
+
+
+}
+
+.bigLinksList {
+
+    font-size: 2em;
+    text-decoration: none;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.singleReviewContainer h2 {
+    font-size: 2em;
+    color: red;
+
+}
