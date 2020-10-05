@@ -2,18 +2,20 @@ package reviews.com;
 
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.GregorianCalendar;
 
-public class Review {
+public class Review implements Comparable<Review> {
     private Long id;
     private String title;
     private String imageUrl;
     private int category;
     private String content;
-    private int stars;
-    private GregorianCalendar date;
+    private String stars;
 
-    public Review(Long id, String title, String url, int category, String content, int stars, GregorianCalendar date) {
+    private LocalDate date;
+
+    public Review(Long id, String title, String url, int category, String content, String stars, LocalDate date) {
         this.id = id;
         this.title = title;
         imageUrl = url;
@@ -22,7 +24,6 @@ public class Review {
         this.stars = stars;
         this.date = date;
     }
-
 
     public Long getId() {
         return id;
@@ -44,12 +45,17 @@ public class Review {
         return content;
     }
 
-    public GregorianCalendar getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public Review(){
-        date = new GregorianCalendar(2018, 6, 27);
+    public String getStars() {
+        return stars;
     }
 
+
+    @Override
+    public int compareTo(Review that) {
+        return this.stars.compareTo(that.stars);
+    }
 }

@@ -11,7 +11,7 @@
 </nav>
 <body class="singleReviewBody">
 
-<img class= "stars" th:src="@{/images/stars/stars1.jpg}" alt="review stars">
+
 
 
     <div class="singleReviewImageFrame">
@@ -19,12 +19,14 @@
     </div>
 
     <div class="reviewContentContainer">
-        <img class= "stars" th:src="@{/images/stars/stars1.jpg}" alt="review stars">
+        <img class= "stars" th:src="${reviewModel.stars}" alt="review stars">
+        <p th:text="${reviewModel.date.toString()}"></p>
         <iframe th:src="${reviewModel.getContent()}" frameborder="0"></iframe>
+        <p th:text="${reviewModel.date.toString()}"></p>
     </div>
+<img class= "stars" th:src="@{reviewModel.stars}" alt="review stars">
 
-    <p><a href="/reviews">Return to the Reviews List</a></p>
-
+<h1 th:text="${reviewModel.date.toString()}" ></h1>
 
 </body>
 </html>
