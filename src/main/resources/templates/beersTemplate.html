@@ -9,17 +9,20 @@
 
 
 </head>
+
+<nav>
+    <a href="/reviews">Return to the Home Page</a>
+</nav>
 <body class="beerBody">
 
 
 <ul>
-    <li th:each="review: ${beersOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+    <li class="reviewTitle" th:each="review: ${beersOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
     </li>
 </ul>
 
 
 
 
-<p><a href="/reviews">Return to the Reviews List</a></p>
 </body>
 </html>

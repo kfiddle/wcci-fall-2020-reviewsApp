@@ -6,18 +6,21 @@
 
     <link th:href="@{/images/mainLayout.css}" rel="stylesheet">
 </head>
-
+<nav>
+    <a href="/reviews">Return to the Home Page</a>
+</nav>
 <body class="singleReviewBody">
+
+<img class= "stars" th:src="@{/images/stars/stars1.jpg}" alt="review stars">
+
 
     <div class="singleReviewImageFrame">
         <img class="reviewerShot" th:src="${reviewModel.getImageUrl()}" alt="reviewer's photo">
     </div>
 
     <div class="reviewContentContainer">
-
-
-        <iframe src="/images/test-content.txt" frameborder="0"></iframe>
-
+        <img class= "stars" th:src="@{/images/stars/stars1.jpg}" alt="review stars">
+        <iframe th:src="${reviewModel.getContent()}" frameborder="0"></iframe>
     </div>
 
     <p><a href="/reviews">Return to the Reviews List</a></p>

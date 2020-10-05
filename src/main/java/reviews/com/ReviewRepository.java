@@ -16,10 +16,20 @@ public class ReviewRepository {
 
     public ReviewRepository() throws MalformedURLException {
         Collection<Review> tempReviewsList = new ArrayList<>();
-        tempReviewsList.add(new Review(1L, "Dortmunder is best", "/images/reviewer1.jpg", 1, "content1", 5, new GregorianCalendar(1975, 10, 10)));
-        tempReviewsList.add(new Review(2L, "Yuengling only works in PA", "/images/reviewer2.png", 1, "content2", 1, new GregorianCalendar(2012, 5, 3)));
-        tempReviewsList.add(new Review(3L, "Johnny Walker Blue is overhyped", "/images/reviewer3.jpg", 2, "content3", 3, new GregorianCalendar(2017, 2, 17)));
-        tempReviewsList.add(new Review(4L, "Springbank- underrated", "/images/reviewer4.jpg", 2, "content4", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(1L, "Dortmunder is best", "/images/reviewer1.jpg", 1, "/images/reviews/review1.txt", 5, new GregorianCalendar(1975, 10, 10)));
+        tempReviewsList.add(new Review(2L, "Yuengling only works in PA", "/images/reviewer2.png", 1, "/images/reviews/review2.txt", 1, new GregorianCalendar(2012, 5, 3)));
+        tempReviewsList.add(new Review(3L, "Johnny Walker Blue is overhyped", "/images/reviewer3.jpg", 2, "/images/reviews/review3.txt", 3, new GregorianCalendar(2017, 2, 17)));
+        tempReviewsList.add(new Review(4L, "Springbank- underrated", "/images/reviewer4.jpg", 2, "images/reviews/review4.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(5L, "MacAllan 12 is good but pricey", "/images/reviewer5.jpg", 2, "/images/reviews/review5.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(6L, "Suntory- a good surpise", "/images/reviewer6.jpg", 2, "/images/reviews/review6.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(7L, "No thanks on Ardbeg", "/images/reviewer7.jpg", 2, "/images/reviews/review7.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(8L, "Troegs anything works", "/images/reviewer8.jpg", 1, "/images/reviews/review8.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(9L, "Duvel isn't so special ", "/images/reviewer9.jpg", 1, "/images/reviews/review9.txt", 4, new GregorianCalendar(2019, 12, 22)));
+        tempReviewsList.add(new Review(10L, "Three Philosophers!", "/images/reviewer10.png", 1, "/images/reviews/review10.txt", 4, new GregorianCalendar(2019, 12, 22)));
+
+
+
+
 
         for (Review review : tempReviewsList) {
             reviews.put(review.getId(), review);

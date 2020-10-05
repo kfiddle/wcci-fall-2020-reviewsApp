@@ -9,19 +9,17 @@
 
 
 </head>
+
+<nav>
+    <a href="/reviews">Return to the Home Page</a>
+</nav>
+
 <body class="scotchBody">
 
-<h1>All da scotches will be here soon</h1>
-
-
 <ul>
-    <li th:each="review: ${scotchOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
+    <li class= "reviewTitle" th:each="review: ${scotchOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
     </li>
 </ul>
 
-
-
-
-<p><a href="/reviews">Return to the Reviews List</a></p>
 </body>
 </html>
