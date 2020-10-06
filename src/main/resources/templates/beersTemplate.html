@@ -13,16 +13,19 @@
 <nav class="beersNavBar">
     <a href="/reviews">Return to the Home Page</a>
 </nav>
-<body  class="beerBody">
-
+<body class="beerBody">
+<main class=" beer-scotchMain">
 
 <ul>
     <li class="reviewTitle" th:each="review: ${beersOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
     </li>
 </ul>
 
-
-
-
+</main>
+<footer>
+    <p>&copy wcci- Fall 2020- The Greatest Cohort In History</p>
+</footer>
 </body>
+
+
 </html>

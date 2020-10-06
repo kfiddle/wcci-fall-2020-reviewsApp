@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color:blanchedalmond;
+    color: blanchedalmond;
 }
 
 .mainBody {
@@ -25,28 +25,28 @@ main.homePageMainContainer {
 
 }
 
-.mainGreeting{
-    display:flex;
+.mainGreeting {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding-top: 3%;
 }
 
-.mainGreeting p{
+.mainGreeting p {
     font-size: 2em;
     color: blanchedalmond;
     font-weight: bolder;
     padding-bottom: 30px;
 }
 
-nav.beersNavBar a{
+nav.beersNavBar a {
     text-decoration: none;
-    color:blanchedalmond;
+    color: blanchedalmond;
 }
 
 .beerBody {
-
+    height: 600px;
     background-image: url("beer-background.jpg");
     background-size: cover;
 }
@@ -54,35 +54,37 @@ nav.beersNavBar a{
 .scotchBody {
     background-image: url("scotch-background.jpg");
     background-size: cover;
+}
 
+.beer-scotchMain{
+    height: 600px;
 }
 
 .beerBody a {
     color: #333333;
 }
 
+.singleReviewMain{
+    width: 100%;
+    height: 600px;
+}
 .reviewTitle {
     font-size: 1.5em;
 }
 
 .singleReviewBody {
     background-image: url("single-review-background2.jpg");
-
+    display: flex;
+   /* justify-content: space-around;  */
+    align-items: flex-end;
 }
 
 .bigLinksList {
-
     height: 150px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
 }
-/*
-.bigLinksList h2 {
-    font-size: 1.5em;
-    color: blanchedalmond;
-    text-decoration: none;
-*/
 
 nav {
     display: flex;
@@ -96,7 +98,7 @@ nav {
 
 nav a {
     margin-right: 15%;
-    color: floralwhite;
+    color: bisque;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -106,33 +108,43 @@ ul {
 }
 
 .singleReviewImageFrame {
+    align-self: stretch;
     width: 320px;
     height: 320px;
     background-color: black;
     border: 3px solid #ccc;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 40px 25px;
-
 }
-
 .reviewerShot {
+    align-self: center;
     width: 100%;
     height: 100%;
 }
 
 .reviewContentContainer {
-    width: 350px;
+    width: 300px;
     height: 300px;
     background-color: beige;
     border: 5px solid #666;
-    margin-left: 50%;
-    margin-bottom: 50%;
+    margin-top: 15%;
+    margin-left: 20%;
+    /*margin-bottom: 50%;*/
+
 }
+
 
 iframe {
     width: 100%;
     height: 100%;
     font-size: 16px;
 }
+
+footer{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+
 

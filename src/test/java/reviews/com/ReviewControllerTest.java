@@ -40,6 +40,7 @@ public class ReviewControllerTest {
                 .andExpect(view().name("allReviewsTemplate"));
     }
 
+
     @Test
     public void shouldHaveAllReviewsInModel() throws Exception {
         ArrayList<Review> allReviewsInModel = new ArrayList<>();

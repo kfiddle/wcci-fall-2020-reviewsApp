@@ -15,11 +15,17 @@
 </nav>
 
 <body class="scotchBody">
-
+<main class=" beer-scotchMain">
 <ul>
     <li class= "reviewTitle" th:each="review: ${scotchOnlyModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a>
     </li>
 </ul>
 
+</main>
+
+<footer>
+    <p>&copy wcci- Fall 2020- The Greatest Cohort In History</p>
+</footer>
 </body>
+
 </html>

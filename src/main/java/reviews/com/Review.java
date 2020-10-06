@@ -1,9 +1,7 @@
 package reviews.com;
 
-import java.net.URL;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.GregorianCalendar;
+
 
 public class Review implements Comparable<Review> {
     private Long id;
