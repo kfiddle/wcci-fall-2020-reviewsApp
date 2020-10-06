@@ -109,8 +109,8 @@ ul {
 
 .singleReviewImageFrame {
     align-self: stretch;
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
     background-color: black;
     border: 3px solid #ccc;
     margin-top: 5%;
