@@ -6,5 +6,5 @@ The images are linked from the back-end to the static folder, and the review con
 
 Each review has an instance variable called "stars", which, at the moment, is a link to one of five small screenshots of the kind of stars you'd see when looking at any online review. (I'll make a more sophisticated version of this soon when I look into JavaScript).
 
-
+The images are all courtesy of unsplash.com.
 
